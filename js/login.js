@@ -12,6 +12,6 @@ if(id.value == ""){
     alert("Ingresa tu contraseña")
     return false;
 }else{
-    window.location.href = 'encomiendas.html';
+    window.location.href = 'recepcion.html';
 }
 }
