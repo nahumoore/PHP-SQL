@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,21 +17,11 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
+    <script src="js/jquery.min.js"></script>
+    <!--===============================================================================================-->
 </head>
 <body class="backgroundimg">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <a class="navbar-brand" href="menu.html">
-            <img src="images/logo.png" alt="Logo" style="width:60px;">
-          </a>
-        <ul class="navbar-nav mr-auto">
-          </ul>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <button class="btn btn-secondary btn-lg" style="margin-right: 30px;" onclick="location.href='index.html'">Login</button>
-            </li>
-        </ul>
-      </nav>
-      
+<?php require('./components/Nav/nav.php')?>
       <div class="header-block"style="text-align: center; margin-top: 9%;">
         <img src="images/logo.png" alt="stonks logo">
         <h4 style="margin-bottom: 10px; margin-top: 20px;">No importa donde se encuentre tu producto,</h4>
@@ -60,8 +53,10 @@
       <footer class="bg-light text-center text-lg-start" style="margin-top: 5%;">
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
           © 2021 Copyright:
-          <button class="btn btn-outline-secondary" onclick="window.location.href='personal.html'" style="margin-left: 10px; color: black;">Datos personales</button>
+          <button class="btn btn-outline-secondary" onclick="window.location.href='personal.php'" style="margin-left: 10px; color: black;">Datos personales</button>
         </div>
       </footer>
+      <script src="./components/Login/btnLogin.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

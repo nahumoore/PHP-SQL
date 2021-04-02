@@ -39,17 +39,21 @@
 					<span class="login100-form-title">
 						Bienvenido
 					</span>
-
+					<div class="alert alert-danger d-none" role="alert" id="alert">
+					</div>
+					<form action="./components/Login/login.php" method="POST">
 					<div class="wrap-input100 validate-input">
-						<input class="input100" id="id" type="text" placeholder="ID" for="inputID">
+						<input class="input100" id="id" type="text" placeholder="ID" name="inputID" />
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-id-badge" aria-hidden="true"></i>
 						</span>
 					</div>
+					<div class="alert alert-danger d-none" role="alert" id="alertID">
+					  </div>
 
 					<div class="wrap-input100 validate-input">
-						<input class="input100" id="pass" type="password" name="pass" placeholder="Contraseña">
+						<input class="input100" id="pass" type="password" name="password" placeholder="Contraseña" />
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -57,11 +61,12 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" onclick="login()">Login</button>
+						<button class="login100-form-btn" id="btnSubmit" name="loginBtn">Login</button>
 					</div>
-
+					</form>
+					
 					<div class="container-login100-form-btn1">
-						<button class="login100-form-btn1" style="margin-bottom: 20%;" onclick="window.location.href='menu.html'">
+						<button class="login100-form-btn1" style="margin-bottom: 10%;" onclick="window.location.href='menu.php'">
 							Soy un cliente
 						</button>
 					</div>
@@ -69,6 +74,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="./js/login.js"></script>
+	<script src="./components/Login/login.js"></script>
 </body>
 </html>

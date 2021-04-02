@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,20 +17,11 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
+    <script src="js/jquery.min.js"></script>
+    <!--===============================================================================================-->
 </head>
 <body class="backgroundimg">
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-    <a class="navbar-brand" href="menu.html">
-        <img src="images/logo.png" alt="Logo" style="width:60px;">
-      </a>
-    <ul class="navbar-nav mr-auto">
-      </ul>
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <button class="btn btn-secondary btn-lg" style="margin-right: 30px;" onclick="location.href='index.html'">Login</button>
-        </li>
-    </ul>
-  </nav>
+<?php require('./components/Nav/nav.php'); ?>
     <div class="container centerDiv">
         <div class="row">
             <div class="col">
@@ -39,5 +33,7 @@
             </div>
         </div>
         </div>
+      <script src="./components/Login/btnLogin.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

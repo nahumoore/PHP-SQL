@@ -576,3 +576,9 @@ iframe {
 .dropdown:hover .dropbtn {
   background-color: #000000;
 }
+
+.editInputs{
+  width: 300px;
+  display: inline;
+  margin-left: 20px
+}
