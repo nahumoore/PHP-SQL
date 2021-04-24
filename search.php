@@ -27,7 +27,7 @@
         <?php require('./components/Client/table.php') ?>
     </div>
 
-    <footer class="bg-light text-center text-lg-start footer" style="margin-top: 187px;">
+    <footer class="bg-light text-center text-lg-start footer" style="margin-top: 372px;">
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
           © 2021 Copyright:
           <button class="btn btn-outline-secondary" onclick="window.location.href='personal.php'" style="margin-left: 10px; color: black;">Datos personales</button>
