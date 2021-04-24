@@ -62,7 +62,7 @@ while ($result = $query -> fetch_array()):
         <td><?php echo $result['Tipo_encomienda']; ?></td>
         <td><?php echo $result['Observaciones']; ?></td>
         <td>
-            <a href="#" id="edit-<?php echo $result["ClienteID"];?>" class="btn btn btn-secondary" style="margin: 5px; color:black;"><i class="fa fa-pencil"></i></a>
+            <a href="#" id="edit-<?php echo $result["ClienteID"];?>" class="btn btn btn-light" style="margin: 5px; color:black;"><i class="fa fa-pencil"></i></a>
             <script>
                 $("#edit-"+<?php echo $result["ClienteID"];?>).click(function(e){
                     e.preventDefault();
