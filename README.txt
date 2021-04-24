@@ -32,7 +32,7 @@ Recepcionistas:
 
 Instalacion de la pagina web:
  1) Borrar e introducir tus datos($host, $user, $password) en "server.php" dentro de las carpetas components/Client, Login, Table, Users
- 2) Copiar el texto del archivo "Database/database.sql" y pegarlo en http://localhost/phpmyadmin/server_databases.php
+ 2) Copiar el texto del archivo "Database/database.sql" dirigirse a 'http://localhost/phpmyadmin/server_databases.php' => SQL => y pegarlo allí
 
 
 
